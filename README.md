@@ -3,7 +3,7 @@ Swift Snippets
 
 A collection of Swift snippets I've found useful when starting out with the language. These are things that tripped me up due to not reading the Swift Programming Language book enough.
 
-### UIView Animations
+### Getting used to closures with UIView Animations
 
 ```swift
 UIView.animateWithDuration(1.0, animations: {() -> Void in
@@ -15,8 +15,16 @@ Which can be simplified to
 
 ```swift
 UIView.animateWithDuration(1.0, animations: {
-            // Animations
+  // Animations
 })
+```
+
+Which after reading the docs more, if a closure is the last argument then you can just pass it after the call
+
+```swift
+UIView.animateWithDuration(1.0) {
+  // Animations
+}
 ```
 
 Closures with return types are called like so
