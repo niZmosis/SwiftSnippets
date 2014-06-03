@@ -18,3 +18,13 @@ UIView.animateWithDuration(1.0, animations: {
             // Animations
 })
 ```
+
+Closures with return types are called like so
+
+```
+UIView.animateWithDuration(1.0, animations: {
+  // Animations
+}, completion: { success in
+  // Completion
+})
+```
