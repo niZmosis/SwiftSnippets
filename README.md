@@ -5,7 +5,7 @@ A collection of Swift snippets I've found useful when starting out with the lang
 
 ### UIView Animations
 
-```
+```swift
 UIView.animateWithDuration(1.0, animations: {() -> Void in
   // Animations
 })
@@ -13,7 +13,7 @@ UIView.animateWithDuration(1.0, animations: {() -> Void in
 
 Which can be simplified to 
 
-```
+```swift
 UIView.animateWithDuration(1.0, animations: {
             // Animations
 })
@@ -21,7 +21,7 @@ UIView.animateWithDuration(1.0, animations: {
 
 Closures with return types are called like so
 
-```
+```swift
 UIView.animateWithDuration(1.0, animations: {
   // Animations
 }, completion: { success in
