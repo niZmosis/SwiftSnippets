@@ -36,3 +36,18 @@ UIView.animateWithDuration(1.0, animations: {
   // Completion
 })
 ```
+
+### Lazy Loading
+
+I like to lazy load things, keeps all the ivars in the same place, removing a bunch of code from init() methods. This is how to do it in Swift.
+
+```swift
+@lazy var awesomeView: UIView = {
+  let view: UIView = UIView()
+  view.backgroundColor = UIColor.redColor()
+  // Any other initial configuration
+  return view
+}()
+```
+
+Then you'd just call `self.addSubview(awesomeView)` in your `viewDidLoad()`.
